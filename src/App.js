@@ -13,7 +13,13 @@ import About from "./Components/About";
 
 
 const Api_Key = "02d6c46890f0adaf5c47d81ad7142d3d";
-const date = Date();
+const date = new Date();
+const year = date.getFullYear();
+const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const month = months[date.getMonth()];
+const day = date.getDate();
+const week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+const wday = week[date.getDay()];
 
 
 class App extends React.Component {
@@ -27,16 +33,16 @@ class App extends React.Component {
         country: undefined,
         humidity: undefined,
         description: undefined,
-        error: undefined}
+        error: undefined,
+        status:false};
       
     }
-    
- 
   aboutme(){
    this.setState({
      showPopup:!this.state.showPopup
    });
   }
+  
   getWeather = async (e) => {
 
     const city = e.target.elements.city.value;
@@ -53,14 +59,20 @@ class App extends React.Component {
         country: response.sys.country,
         humidity: response.main.humidity,
         description: response.weather[0].description,
-        error: ""
+        error: "",
+        
       })
-    }else{
+      
+      
+    }
+    else{
       this.setState({
-        error: "Please input search values..."
-      })
+        error: "Please input search values...", 
+            })
+        
     }
   }
+  
   
   render() { 
     return (
@@ -70,31 +82,37 @@ class App extends React.Component {
           <Route exact path="/" render={props=>(
             <React.Fragment>
               <Header className="header1"/>
-              <button onClick={this.aboutme.bind(this)}>My Philosophy</button>    
+              <p className="date">It's {year}{", "}{month}{" "}{day}{", "}{wday}{". "}</p>  
+              <button className="popupbtn" onClick={this.aboutme.bind(this)}>My Philosophy</button>  
+              
           
               {this.state.showPopup ?  
-              <Popup  
+              <Popup className="popup" 
                   text='Conceive, Believe, Achieve'  
                   closePopup={this.aboutme.bind(this)} 
                   
               />  
               : null  
               }
-              <p className="date">{date}</p>
-              <Weatherform loadWeather={this.getWeather} />  
+          
+          <p className="weathertext"> Today outside looks like </p>
+              
+          <Weatherform loadWeather={this.getWeather}/> 
+           
               <Weather temperature={this.state.temperature}
                         city={this.state.city}
                         country={this.state.country}
                         humidity={this.state.humidity}
                         description={this.state.description}
                         error={this.state.error}/>
-              <Sidebar/>
+              
 
             </React.Fragment>
 
           )}/>
           <Route path="/about" component={About}/>
           <Route path="/projects" component={Projects}/>
+          <Route path= "/contact" component={Sidebar}/>
           
         </div>
       </Router>

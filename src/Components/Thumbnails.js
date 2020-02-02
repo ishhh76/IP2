@@ -1,16 +1,20 @@
 import React from 'react'
 import{Link} from "react-router-dom"
 
+
 export default function Thumbnails(props) {
     return (
         <div className="project">
-            <Link to={props.projlink}>
+            <div>
                 <div>
-                    <img src={props.projimage} alt=""/>
+                    {/* <Link id="imagelink"to={props.projlink}>Link to the project "{props.projtitle}":</Link> */}
+                    <img className="pimage"src={props.projimage} alt=""/>
                 </div>
-                <div className="project-title"> {props.projtitle}</div>
-                <div className="project-category">{props.projcategory}</div>
-            </Link>
+                <div className="pcontent"><div className="ptitle"> <p><span>Title:</span> {props.projtitle}</p> </div>
+                <div className="pcategory"><p> <span>Category:</span> {props.projcategory}</p> </div></div>
+            
+            </div>
+            
             
         </div>
     )

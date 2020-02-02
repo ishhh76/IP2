@@ -4,33 +4,39 @@ import {Link} from "react-router-dom";
 export default function About() {
     return (
         <React.Fragment>
-            <h1>My Profile</h1>
-            <Link to="/">Home</Link> | <Link to="/projects">Projects</Link>
-            <h3>Current status</h3>
-            <p>Am a rookie front-end(FE)developer and a student in the second termine of the 4 termine 
-               FE developer course at KYH Stockholm, Sweden. 
-            </p>
-            <h3>Background</h3>
-            <p> Back in 1998, I graduated in B.Pharm, and specialized in Biotecnology during MS.Pharm (2001) and pursued
-               doctoral education in Medical science (Endocrinology, 2008) and joined Karolinska Institute (KI) as a 
-               postdoctoral research fellow. Uptil 2017 I had worked at various positions at KI and then joined a start-up
-               called Sigrid Therapeutics AB to work as Research and Development Scientist until 2018. 
-            </p>
-            <p>In 2019 I decided to change field of work and to move into the Information Technology field. Having done few
-               basic programming course in Python, I took up FE developer course.
-            </p>
-            <h3>Competencies</h3>
-            <p>
-                <ul>
-                    <li> Experienced Biomedical Analyst</li>
-                    <li> Experienced Clinical Scientist</li>
-                    <li> Experienced Pharmacist</li>
-                    <li> Python rookie programmer</li>
-                    <li> Javasccript programmer</li>
-                    <li> Experienced in HTML5 and CSS3</li>
+        <div className="aboutcontainer1">
+            <div className="aboutcontainer2"><h1 className="abouth1">My Profile</h1>
+            <div className="menulink"><Link to="/">Home</Link> | <Link to="/projects">Projects</Link> | <Link to="/contact">Contact Info</Link></div>
+            <div className="aboutText1">
+                <div className="atextcol">
+                <h3 className="abouth3">Current status</h3>
+                <p className="aboutp">A rookie front-end (FE) developer and a FE student.
+                </p>
+                <h3>Background</h3>
+                <p> A graduate in M.S.Pharm, with specialization in Biotechnology and a doctoral degree in Medical science (Endocrinology, 2008) with years of work experience 
+                    as a Senior Researcher at Karolinska Institute and at Sigrid Therapeutics AB as Research and Development Scientist. 
+                </p>
+                <p> Basic programmer in Python and a novice front-end developer with the passion and 
+                    goal to evolve as a full stack developer. UX/UI designer.
+                </p></div>
+                <div className="aboutText2"><h3>Competencies</h3>
+                    <p>
+                        <ul>
+                            <li> Biomedical Analysis</li> <br></br>
+                            <li> Clinical and medical Research </li><br></br>
+                            <li> In-vivo experimental research</li><br></br>
+                            <li> Python </li><br></br>
+                            <li> Javascript </li><br></br>
+                            <li> React JS </li><br></br>
+                            <li> HTML5 and CSS3 </li><br></br>
+                            <li> SASS </li><br></br>
+                            <li> UX / UI </li>
 
-                </ul>
-            </p>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div></div> 
 
         </React.Fragment>
     )

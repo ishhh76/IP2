@@ -11,7 +11,7 @@ class Header extends Component {
                 <div className="header1">
                     <img src={image} className="handshake" alt="handshake" />
                     <h1 className="introline">Hi, am Ishrath.</h1>  
-                    <Link to="/">Home</Link> | <Link to="/about">About</Link>  | <Link to="/projects">Projects</Link>
+                    <div className="menulink"><Link to="/">Home</Link> | <Link to="/about">About</Link> | <Link to="/projects">Projects</Link> | <Link to="/contact">Contact Info</Link></div>
                     
                     
                 </div>               
