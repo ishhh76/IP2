@@ -19,18 +19,18 @@ export default function Projects(props) {
                 <div id="thumpnailcontainer">
                 <Thumbnails 
                 projimage={ip1} 
-                projtitle="To Do webApp in Javascript"
+                projtitle="A Realty webpage in Javascript"
                 projcategory="HTML, CSS, Javascript"/>
 
                 <Thumbnails 
                 projimage={todo} 
-                projtitle="To Do webApp in Javascript"
+                projtitle="A To Do webApp in Javascript"
                 projcategory="HTML, CSS, Javascript"/>
 
                 <Thumbnails className="ptn3"
                 projimage={todoR} 
-                projtitle="To Do webApp in Javascript"
-                projcategory="HTML, CSS, Javascript"/>
+                projtitle="A To Do webApp in React"
+                projcategory="HTML, CSS, Javascript, React"/>
                 
 {/* 
                 <Thumbnails className="ptn3"

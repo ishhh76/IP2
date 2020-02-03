@@ -254,6 +254,8 @@ h1 {
   }
   #aspan{
     color: black;
+    font-weight: normal;
+    font-size: 14px;
   }
   #imagelink{
     margin: 0 250px;

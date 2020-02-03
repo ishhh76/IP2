@@ -19,7 +19,7 @@ export default function About() {
             <div className="aboutText1">
                 <div className="atextcol">
                 <h4 className="abouth3"> Am, </h4>
-                <p className="aboutp">A rookie front-end (FE) developer and a FE student.
+                <p className="aboutp">A rookie front-end developer.
                 </p>
                 <p > M.S.Pharm, graduate with specialization in Biotechnology and a doctoral degree in Medical science.</p>
                 
@@ -31,15 +31,15 @@ export default function About() {
                     
                         <ul>
                             
-                            <li> Clinical, Experimental and<br></br> Bio-medicalResearch </li><br></br>
-                            <li> <img id="python" src={python}/> Python </li><br></br>
-                            <li> <img id="three" src={three}/></li>
+                            <li> Clinical, Experimental and<br></br> Bio-medical Research </li><br></br>
+                            <li> <img id="python" src={python} alt="python logo"/> Python </li><br></br>
+                            <li> <img id="three" src={three}alt="HTML5, CSS3,JavaScript logo"/></li>
                             <span id="aspan"> HTML5, CSS and  Javascript  </span><br></br>
-                            <li> <img id="react" src={react}/>React JS </li><br></br>
-                            <li> <img id="sass" src={sass}/>SASS </li><br></br>
-                            <li> <img id="ux" src={ux}/>UX / UI </li><br></br>
-                            <li> <img id="responsive" src={responsive}/>Responsive design</li><br></br>
-                            <li> <img id="agile" src={agile}/>Agile Methodology</li><br></br>
+                            <li> <img id="react" src={react}alt="React logo"/>React JS </li><br></br>
+                            <li> <img id="sass" src={sass}alt="SASS logo"/>SASS </li><br></br>
+                            <li> <img id="ux" src={ux}alt="UX logo"/>UX / UI </li><br></br>
+                            <li> <img id="responsive" src={responsive}alt="Responsive design logo"/>Responsive design</li><br></br>
+                            <li> <img id="agile" src={agile}alt="Agile logo"/>Agile Methodology</li><br></br>
 
                         </ul>
                         
