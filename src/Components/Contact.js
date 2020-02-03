@@ -20,11 +20,11 @@ export class Contact extends Component {
       >
        <div className="contactform"> <h3>Contact Form</h3>
         <label>Name:</label>
-		    <input type="text" name="name"/>
+		    <input id="cinp"type="text" name="name"/>
 		    <label>Email:</label>
-        <input type="email" name="email" />
+        <input id="cinp"type="email" name="email" />
         <label>Message:</label>
-        <input type="text" name="message" />
+        <input id="cinp"type="text" name="message" />
         {status === "SUCCESS" ? <p>Thanks!</p> : <button id="contactbtn">Submit</button>}
         {status === "ERROR" && <p>Ooops! There was an error.</p>}
         </div>

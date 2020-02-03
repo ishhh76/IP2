@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import ip1 from "./IP1.png";
 import todo from "./ToDo-JS.png"
 import todoR from "./ToDo-React.png"
+// import flora from "./floral.jpg"
 
 
 
@@ -30,6 +31,12 @@ export default function Projects(props) {
                 projimage={todoR} 
                 projtitle="To Do webApp in Javascript"
                 projcategory="HTML, CSS, Javascript"/>
+                
+{/* 
+                <Thumbnails className="ptn3"
+                projimage={flora} 
+                projtitle="To Do webApp in Javascript"
+                projcategory="HTML, CSS, Javascript"/> */}
                 </div>
 
                 

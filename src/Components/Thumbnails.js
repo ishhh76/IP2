@@ -5,7 +5,7 @@ import{Link} from "react-router-dom"
 export default function Thumbnails(props) {
     return (
         <div className="project">
-            <div>
+            <div id="ptn">
                 <div>
                     {/* <Link id="imagelink"to={props.projlink}>Link to the project "{props.projtitle}":</Link> */}
                     <img className="pimage"src={props.projimage} alt=""/>

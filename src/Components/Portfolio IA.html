@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://localhost:3003/contact -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:3003/favicon-16x16.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Very Basic Portfolio Web site created using create-react-app">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:3003/apple-touch-icon.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3003/site.webmanifest">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Portfolio IA</title>
+  <style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+</style><style>@import url(https://fonts.googleapis.com/css?family=Cormorant+Upright|Gabriela|Kreon&display=swap);</style><style>/* font-family: 'Kreon', serif;
+font-family: 'Cormorant Upright', serif;
+font-family: 'Gabriela', serif; */
+
+*{box-sizing: border-box;
+  font-family: 'Gabriela', serif; 
+ 
+}
+.maincontainer{
+  display: flex;
+  flex-direction: column;
+  
+}
+.container1{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header1{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+img.handshake {
+  height: auto;
+  max-width: 400px;
+  position: relative;
+  top: 50px;
+  left: 300px;
+}
+.introline{
+  text-align: right;
+  margin-right: 150px;
+  font-size: 54px;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+.menulink{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width:50%;
+  margin: 30px 25%;
+  font-weight: bold;
+  color:rgb(221, 57, 57);
+  font-size: 18px;
+  
+}
+
+.date{
+  height: auto;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  margin: 0 25%;
+}
+.popupbtn{
+  justify-content: center;
+  margin-top: 10%;
+  width:30%;
+  margin: 10px 35%;
+  
+}
+.popup{
+  width: 80%;
+  margin: 0 -1%;
+  text-align: center;
+}
+.weathertext{
+  text-align: center;
+  padding: 5px;
+}
+#wform{
+  display: flex;
+  flex-direction: row;
+  width:54%;
+  justify-content: space-between;
+  margin: 10px 23%;
+}
+.weather-info{
+  width:250px;
+  height:200px;
+  margin: 0 41%;
+  text-align: center;
+}
+#footer{
+  background-color:rgb(131, 58, 58) ;
+}
+.footercontainer{
+  background-color: rgb(131, 58, 58);
+  color: #000;
+  text-align: center;
+  height: 100px;
+  
+}
+.footerrow{
+  width:20%;
+  margin: 5px 39.5%;
+  display: flex;  
+  flex-direction: row;
+  justify-content: space-around;
+}
+.px-3{
+  display: inline;
+  position:relative;
+  top: 20px;
+ 
+}
+.pt-4{
+  padding: 10px;
+  margin:0;
+  margin-top: 30px;
+}
+h1 {
+  text-align: right;
+  font-size: 54px;
+  margin-right: 30px;
+  color: rgb(131, 58, 58);
+}
+
+
+.sidebarcontainer{
+  border:2px solid black; 
+  height:70vh;
+  width:100%;
+
+}
+.aboutcontainer1, .pcontainer1, .ccontainer1{
+  width: 100%;
+  /* background-color:rgba(9, 59, 53, 0.911) ; */
+  background-color:#bab86c;
+  height: 100%;
+  /* overflow: hidden;  
+  background-image: url(/src/Components/floral.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; */
+ 
+}
+
+.aboutcontainer2, .pcontainer2, .ccontainer2{
+  display: flex;
+  flex-direction: column;
+  background-color:white ;
+  max-width: 95%;
+  height: auto;
+  position: relative;
+  top:35px;
+  left:35px; 
+  margin-bottom: 70px;
+  /*border-radius: 20px;*/
+  box-shadow: 10px 10px rgb(131, 58, 58);
+  }
+  .aboutText1{
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+  }
+  .atextcol{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: justify;
+  }
+  h3 {
+    font-size: 24px;
+    text-align: right;
+    color: rgb(131, 58, 58);
+  }
+  h4{
+    color:rgb(131, 58, 58) ;
+  }
+  p, span{
+    font-size: 18px;
+  }
+  .ctext{
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-weight: bold;
+
+  }
+  .contactform{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 30px 25%;
+  }
+  #contactbtn{
+    margin: 10px 35%;
+    width: 200px;
+    
+  }
+  #cinp{
+    width: 650px;
+
+  }
+  input,button{
+    border-radius: 5px;
+   border-color: rgb(131, 58, 58);
+   height: 30px;
+   width: 250px;
+  
+  }
+  button{
+    background-color: #bab86c ;
+    font-weight: bold;
+    color:rgb(131, 58, 58);
+    width: 250px;
+  }
+  label{
+    font-weight: bold;
+    color: rgb(131, 58, 58);
+  }
+  .pimage{
+    position: relative;
+    top: 10px;
+    left: 600px;
+    border:2px solid gray;
+    border-radius: 10px;
+    width: 400px;
+    height: 300px; 
+
+  }
+  #thumpnailcontainer{
+    max-width: 100%;
+    margin-top: 40px;
+  }
+  span{
+    font-weight: bold;
+    color: rgb(131, 58, 58);
+  }
+  #imagelink{
+    margin: 0 250px;
+  }
+  .pcontent{
+    margin: 0 300px ;
+    position: relative;
+    bottom: 100px;
+  }
+  #responsive, #agile, #python, #three, #react, #sass, #ux{
+    width: 100px;
+    height: 100px;
+  }
+  
+  @media only screen and (max-width: 1040px){
+
+  }</style><script charset="utf-8" src="./Portfolio IA_files/main.eb67af1dd389c525992b.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.50974e26b4d2952e5d33.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.bb4d482b17bab980a70c.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.315fda5db9052aafcd43.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.2e59230ee8e12e83e19d.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.584f52f9111510f506e2.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.d1d16fe01878140d2051.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.53624bfecf6dfafeb3a0.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.1f8327e58953a1242a24.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.8e8e7a0353a206b3fa7b.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.13e0e9a19bd4cc59d1d5.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.b13aae24450d7573b0a4.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.328ccf5cabeff833a8e2.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.c935711f8bff8c0f672d.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.5b097b3b82b751ee561c.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.530d869f26bf6e148ea9.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.81a7eaf149500e406c58.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.64f087c4e69a4c643ae1.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.8f045245551b24963a7a.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.cb701a0e2042b47f6925.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.afbc49258fa6a5a82163.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.1f9fe537a50a3a2aad46.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.39eb861e871a6046ce01.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.c51d6c03e9544aa6e239.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.6a88d0cd782143fd5d38.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.09d93c6bb057dc09edb0.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.92fd961336d67ff280f5.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.0d29ce6ccf4b3178b7d2.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.fbcd5ddcbb4bdcf6d002.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.da89f8bf9803360e6fa3.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.ef593bdc367bfc600f88.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.425136ce46050b5989f7.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.ea3d377582b85de98632.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.a5eac8cfaac5f8b762b1.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.4bd0e5d9918d3c868fc9.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.a0da96a0899c9aae2425.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.46a097010adbe956df47.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.89a8833b4dccc321a336.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.00a98c810041492045fd.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.b402687108e5e731d5ba.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.e92723fa0bf260a3d799.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.fa46f12f7282a4b19e77.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.efa8a88b37a6a15070e1.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.314f053fd51b50b5dcf3.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.0b4b0c9c319c5e088082.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.7f2a1a3bbd8e48c23aab.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.24031c0a3811bbe082c5.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.a535f1b732cf026f814c.hot-update.js.download"></script><script charset="utf-8" src="./Portfolio IA_files/main.ff682c4db57f6042d9bc.hot-update.js.download"></script></head>
+  <body>
+    <!-- <script>
+      
+      document.getElementById('date').innerHTML = Date();
+    </script>
+    <div id="date">
+ -->
+    
+    <div id="root"><div class="maincontainer"><div class="container1"><div class="ccontainer1"><div class="ccontainer2"><h1>Contact Me</h1><div class="menulink"><a href="http://localhost:3003/">Home</a> | <a href="http://localhost:3003/about">About</a> | <a href="http://localhost:3003/projects">Projects</a></div><div class="ctext"><p> Dr. Ishrath Ansurudeen </p><div><p>Stockholm</p></div><p><span>Email:</span> ishrarafi@gmail.com</p></div><form action="https://formspree.io/myywkaab" method="POST"><div class="contactform"> <h3>Contact Form</h3><label>Name:</label><input id="cinp" type="text" name="name"><label>Email:</label><input id="cinp" type="email" name="email"><label>Message:</label><input id="cinp" type="text" name="message"><button id="contactbtn">Submit</button><p>Ooops! There was an error.</p></div></form></div></div></div><div id="footer"><div class="footercontainer"><div class="footerrow"><a class="px-3" href="https://github.com/ishhh76" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfiCwQRDSdiqrQOAAABoUlEQVRIx93Uv2sTcRjH8VfaqEl/JC1tSb36YxDESUSHggqCsx0EQXBzK4iLIIKbm6t/goKbU+soiIOQOgjSuYpI6WC02CSeNm3OwUN6MZdLdNLnO9w9z30/7/s8z/c4/sM4YSj1WcXBLPmMXZseORTnOVPGUXDbW5EHWYCrIpFIw5Kq976LRNZtxPWXnYJ8R96Mr6MW9lSDX3dfOwGd/X7McFiS671hKbaavu70kp/OlEc2kh6SLVzMmjFmnUkHBH0AKKYDan0B6umAT38L+AMHeQdMmJBTV1ARJjvsKj/rA4qaamqMOOa8S+ZN4VrmMV7HuGllI/Z3+6xuaKaKW+72MldyUgGH3bSskZBueeqW4727G/ZY1WScFaztkVf6Gq+cN6rKYDHh4H5/AC5ra3iiatuOz9Zs2hJ6nf7OzljwMG7jhWlfzGlbddSp7oD8b5Vlc4qGPRdqa2kYEqZbznephULs+CZnW8MYxtIA6X/gSU0lLXVlzA4KmBd4p2zdK2UrRl3od4g/Y9GuVc+cE1lxRSBwz4AxYx8IHBlU+k/FD2M/rr41Un9MAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTExLTA0VDE3OjEzOjM5KzAxOjAwzOAo7gAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0xMS0wNFQxNzoxMzozOSswMTowML29kFIAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC" alt=""></a><a class="px-3" href="hhttps://se.linkedin.com/in/ishrath-a-626584b" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfiCwQRDzWjJafEAAABO0lEQVRIx+2UPUgDQRBG3+WMcEFBRETBHwQF0SaojcHOxsYmlSgIlmJvbaWNhUWKlJZaSTrRQjsJiF1iJ1h5iKKBhEOjnM3l3BEDs0GwyWyz3zc7jxl2WReAHtL0UuGDFsJlnzohIc+stALYJoxXnRl7wK0BCDmwLU8wKPSAPaAodNEWAGmCeIAynm25i88xHp+UOWSDwL6D/w6HOcYNfYkPQJbO2AsoAEnWyDCGS4kSZ9w10nnxDpYi99XwfGCWe3GuxhYOQELV5ySnjAgnRY4Cjg6Q4py+X/xlVnWAboaaZPbwdCMAVDnhinfhDbOuBWzST5YM89EtNWJaB8iRj97oDTsiM6ED7Br7I3tAlQdDVXgx1KgGUPuhH419h/4WmkQb0Ab8CcBhSnxW1zwBsEgy9t64EDULdH2LLyv7Wi/OwvgdAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTExLTA0VDE3OjE1OjUzKzAxOjAwo+EOYAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0xMS0wNFQxNzoxNTo1MyswMTowMNK8ttwAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC" alt=""></a></div><h5 class="pt-4">Ishrath Ansurudeen © 2020</h5></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    
+  <script src="./Portfolio IA_files/bundle.js.download"></script><script src="./Portfolio IA_files/0.chunk.js.download"></script><script src="./Portfolio IA_files/main.chunk.js.download"></script><script src="./Portfolio IA_files/main.fb99e4eb3111bd65b3bc.hot-update.js.download"></script>
+
+</body></html>
